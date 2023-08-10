@@ -223,13 +223,24 @@ nav .close::after {
     font-family: monospace;
     font-weight: 600;
     letter-spacing: 1px;
-    position: relative;
+    position: absolute;
     z-index: 20;
     border-radius: 100px 90px 100px 0px;
-    top: 40%;
-    left: 50%;
-    transform: translate(60%, 20%);
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%) scale(1);
 }
+
+
+@media (max-width: 767px) {
+   .work {
+        font-size: xx-small;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1.5);
+    }
+}
+
 
 .b {
     overflow: hidden;
@@ -880,7 +891,14 @@ nav .close::after {
     font-weight: 400;
     display: flex;
 }
-
+.text_li{
+    font-size: medium;
+}
+@media (max-width: 767px) {
+    text_li {
+        font-size: x-small; /* Adjust font size for smaller screens */
+    }
+}
 .project .cardCtn .content .desc .list ul{
     width: fit-content; 
     position: relative;
