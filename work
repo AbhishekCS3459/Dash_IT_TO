@@ -225,7 +225,7 @@ nav .close::after {
     letter-spacing: 1px;
     position: absolute;
     z-index: 20;
-    border-radius: 100px 90px 100px 0px;
+     border-radius: 0px 100px 100px 90px;
     top: 50%;
     left: 65%;
     transform: translate(-50%, -50%) scale(1);
